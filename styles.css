@@ -96,3 +96,7 @@ a {
 body {
     text-align: justify;
   }
+
+p {
+    margin-bottom: 5px; /* Adjust the value as needed */
+}
