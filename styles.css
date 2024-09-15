@@ -1,7 +1,7 @@
 body {
-    font-family: 'Open Sans', sans-serif; /* Changed font */
-    background-color: #ffffff; /* Updated background color */
-    color: #333; /* Updated text color */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    color: #333;
     transition: background-color 0.3s;
 }
 
@@ -14,40 +14,58 @@ header {
 nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #000000; /* Updated link color */
-    font-weight: bold; /* Made links bold */
+    color: #000000;
+    font-weight: bold;
 }
 
 main {
     display: flex;
-    align-items: flex-start; /* Align items at the top */
+    align-items: flex-start;
     padding: 20px;
+}
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+iframe {
+    width: 80%;
+    height: 80vh;
+    border: none;
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .profile-container {
     display: flex;
-    flex-direction: column; /* Stack picture, text, and icons vertically */
-    align-items: center; /* Center elements horizontally */
-    margin-right: 20px; /* Space to the right of the profile section */
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
 }
 
 .profile-pic {
     width: 333px;
     height: 333px;
-    border-radius: 50%; /* Made image circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
-    margin-bottom: 10px; /* Space below the image */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
 .profile-container p {
-    margin: 10px 0; /* Space between text and icons */
-    text-align: center; /* Center text */
+    margin: 10px 0;
+    text-align: center;
 }
 
 .icon-container {
     display: flex;
-    justify-content: center; /* Center icons */
-    margin-top: -5px; /* Add spacing above icons */
+    justify-content: center;
+    margin-top: -5px;
 }
 
 .icon-container img {
@@ -59,7 +77,7 @@ main {
 .info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align text to the left */
+    align-items: flex-start;
     margin-top: 30px;
 }
 
@@ -79,12 +97,12 @@ main {
 
 @media (max-width: 768px) {
     main {
-        flex-direction: column; /* Stack elements on smaller screens */
-        align-items: center; /* Center align elements on smaller screens */
+        flex-direction: column;
+        align-items: center;
     }
 
     nav a {
-        margin: 5px 0; /* Adjust spacing for smaller screens */
+        margin: 5px 0;
     }
 }
 
@@ -98,5 +116,10 @@ body {
   }
 
 p {
-    margin-bottom: 5px; /* Adjust the value as needed */
+    margin-bottom: 5px;
+    margin-right: 250px;
+}
+
+li {
+    margin-right: 250px;
 }
