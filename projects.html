@@ -17,49 +17,56 @@
     </header>
     <main>
         <section class="info">
-            <p>
-                    <h2>Perception-based Standard Dynamic Range (SDR) to High Dynamic Range (HDR) conversion</h2>
-                    <ul>
-                        <li>
-                            <img src="1.png" class="project-image"> The drastic visual improvements introduced by <a href="https://en.wikipedia.org/wiki/High_dynamic_range" target="_blank">HDR</a> 
-                            technologies open new markets for a wide range of industries. In this project, through modeling 
-                            the behavior of human eye, we propose a novel high visual quality video inverse Tone Mapping Operator (iTMO) that addresses the 
-                            inadequacies of the state-of-the-art methods, resulting in high visual quality HDR videos that match the capabilities of the HDR technology. 
-                            This algorithm uses a hybrid approach to achieve an optimal balance between the overall contrast and brightness of the output HDR frame 
-                            by maximizing a weighted sum of contrast and brightness difference between input SDR and generated HDR frame. 
+            <article>
+                <h2>Perception-based Standard Dynamic Range (SDR) to High Dynamic Range (HDR) conversion</h2>
+                <ul>
+                    <li>
+                        <img src="1.png" class="project-image" alt="SDR to HDR conversion project illustration"> 
+                        The drastic visual improvements introduced by <a href="https://en.wikipedia.org/wiki/High_dynamic_range" target="_blank">HDR</a> 
+                        technologies open new markets for a wide range of industries. In this project, through modeling 
+                        the behavior of the human eye, we propose a novel high visual quality video inverse Tone Mapping Operator (iTMO) that addresses the 
+                        inadequacies of the state-of-the-art methods, resulting in high visual quality HDR videos that match the capabilities of the HDR technology. 
+                        This algorithm uses a hybrid approach to achieve an optimal balance between the overall contrast and brightness of the output HDR frame 
+                        by maximizing a weighted sum of contrast and brightness difference between input SDR and generated HDR frame. 
 
-                            Our subjective evaluations demonstrated that the proposed algorithm outperforms the existing methods by an average of 75% in terms of 
-                            visual quality. Further testing using <a href="https://hdrvdp.sourceforge.net/wiki/" target="_blank">HDR VDP</a> and 
-                            <a href="https://github.com/gfxdisp/pu21" target="_blank">PU-SSIM</a> objective quality metrics demonstrated that our 
-                            algorithm outperforms existing methods on a wide variety of input content.
-                        </li> <br>
-                    </ul>
-                    <h2>Frame-level rate Control for real-time video applications</h2>
-                    <ul>
-                        <li>
-                            <img src="7.png" class="project-image"> Rate control module is a critical component of a video encoder, especially for low-delay applications such as cloud gaming, 
-                            live streaming, and video conferencing. It ensures that video data is transmitted efficiently and smoothly, maintaining high visual 
-                            quality while adapting to varying network conditions and content complexity. In this work, we developed a frame-level 
-                            video rate control algorithm for <a href="https://netint.com/" target="_blank">NETINT Technologies's</a> next-generation 
-                            Video Processing Units (VPUs). Our algorithm is content adaptive, delivering outstanding performance improvements in terms of BD-rate. 
-                            These enhancements are codec-agnostic, demonstrating consistent gains across AVC, HEVC, and AV1 codecs. Our algorithm achieves an 
-                            average of 10% improvement in BD-rate compared to previous generation encoders, reflecting its efficiency in maintaining high visual 
-                            quality at reduced bitrates. 
-                        </li>
-                        </li> <br>
-                    </ul>
-                    <h2>Enhancing video temporal consistency</h2>
-                    <ul>
-                        <li>
-                            <img src="6.png" class="project-image"> Maintaining consistent luminance is crucial for delivering high-quality viewing experiences. 
-                            Unwanted fluctuations in brightness, often perceived as flickering, can detract from the visual appeal and clarity of images 
-                            and videos. In this work, we addresses this challenge by implementing a condition on any brightness conversion that limits brightness 
-                            fluctuations to less than one Just Noticeable Difference (JND), effectively preventing perceptible flickering. 
-                            By ensuring that changes in brightness remain below the human threshold of detection, our algorithm guarantees a stable and 
-                            consistent luminance output, enhancing the viewer's experience. 
-                        </li>
-                        </li> <br>
-                    </ul>
+                        Our subjective evaluations demonstrated that the proposed algorithm outperforms the existing methods by an average of 75% in terms of 
+                        visual quality. Further testing using <a href="https://hdrvdp.sourceforge.net/wiki/" target="_blank">HDR VDP</a> and 
+                        <a href="https://github.com/gfxdisp/pu21" target="_blank">PU-SSIM</a> objective quality metrics demonstrated that our 
+                        algorithm outperforms existing methods on a wide variety of input content.
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h2>Frame-level rate Control for real-time video applications</h2>
+                <ul>
+                    <li>
+                        <img src="7.png" class="project-image" alt="Frame-level rate control project illustration"> 
+                        Rate control module is a critical component of a video encoder, especially for low-delay applications such as cloud gaming, 
+                        live streaming, and video conferencing. It ensures that video data is transmitted efficiently and smoothly, maintaining high visual 
+                        quality while adapting to varying network conditions and content complexity. In this work, we developed a frame-level 
+                        video rate control algorithm for <a href="https://netint.com/" target="_blank">NETINT Technologies's</a> next-generation 
+                        Video Processing Units (VPUs). Our algorithm is content adaptive, delivering outstanding performance improvements in terms of BD-rate. 
+                        These enhancements are codec-agnostic, demonstrating consistent gains across AVC, HEVC, and AV1 codecs. Our algorithm achieves an 
+                        average of 10% improvement in BD-rate compared to previous generation encoders, reflecting its efficiency in maintaining high visual 
+                        quality at reduced bitrates.
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h2>Enhancing video temporal consistency</h2>
+                <ul>
+                    <li>
+                        <img src="6.png" class="project-image" alt="Video temporal consistency project illustration"> 
+                        Maintaining consistent luminance is crucial for delivering high-quality viewing experiences. 
+                        Unwanted fluctuations in brightness, often perceived as flickering, can detract from the visual appeal and clarity of images 
+                        and videos. In this work, we address this challenge by implementing a condition on any brightness conversion that limits brightness 
+                        fluctuations to less than one Just Noticeable Difference (JND), effectively preventing perceptible flickering. 
+                        By ensuring that changes in brightness remain below the human threshold of detection, our algorithm guarantees a stable and 
+                        consistent luminance output, enhancing the viewer's experience.
+                    </li>
+                </ul>
+            </article>
+            <article>
                     <h2>Fully automatic, content adaptive SDR to HDR conversion</h2>
                     <ul>
                         <li>
@@ -72,8 +79,9 @@
                             we also performed objective evaluations using HDR-VDP and PU-SSIM metrics and concluded that, on average, 
                             our proposed iTMO outperforms the state-of-the-art methods in terms of these two metrics.
                         </li>
-                        </li> <br>
                     </ul>
+            </article>
+            <article>
                     <h2>Block-Level Rate Control for Enhanced Video Encoding</h2>
                     <ul>
                         <li>
@@ -84,8 +92,9 @@
                             delivers substantial improvements in video encoding performance, achieving an average BD-rate gain of 12% over previous generation 
                             encoders. These enhancements provide consistent benefits across AVC, HEVC, and AV1 codecs. 
                         </li>
-                        </li> <br>
                     </ul>
+            </article>
+            <article>
                     <h2>Hue preserving color adjustment</h2>
                     <ul>
                         <li>
@@ -97,8 +106,9 @@
                             methods. Our subjective results indicate that our proposed algorithm outperforms the existing methods by 70% in terms of how closely the 
                             output colors match their input counterparts. 
                         </li>
-                        </li> <br>
                     </ul>
+            </article>
+            <article>
                     <h2>2-Pass video rate control for latency-tolerant applications</h2>
                     <ul>
                         <li>
@@ -112,8 +122,9 @@
                             along with a 3% enhancement in target tracking accuracy. These improvements are consistently observed across various codecs, 
                             including AVC, HEVC, and AV1.                            
                         </li>
-                        </li> <br>
                     </ul>
+            </article>
+            <article>
                     <h2>Entropy-based image segmentation</h2>
                     <ul>
                         <li>
@@ -124,8 +135,9 @@
                             This method proves particularly useful in applications such as medical imaging, remote sensing, and computer vision, where precise 
                             segmentation can lead to more accurate interpretations and decisions.
                         </li>
-                        </li> <br>
                     </ul>
+            </article>
+            <article>
                     <h2>Enhanced target tracking for low-delay rate control algorithms</h2>
                     <ul>
                         <li>
@@ -136,8 +148,9 @@
                             precise bitrate distribution, resulting in an average improvement of 5% in target tracking performance compared to previous generation 
                             algorithms.                            
                         </li>
-                        </li> <br>
                     </ul>
+            </article>
+            <article>
                     <h2>Advanced post-processing for enhanced BD-Rate VMAF in video encoders</h2>
                     <ul>
                         <li>
@@ -150,8 +163,9 @@
                             meticulously designed to preserve the aesthetic integrity of the content. The gains achieved through this method are consistent across 
                             various rate control modes, including Constant Quantization Parameter (CQP), Constant Bitrate (CBR), and Constant Rate Factor (CRF).
                         </li>
-                        </li> <br>
                     </ul>
+            </article>
+            <article>
                     <h2>Comprehensive SDR/HDR conversion suite for enhanced video compatibility</h2>
                     <ul>
                         <li>
@@ -165,8 +179,9 @@
                             quality and compatibility. The hardware implementation of this suite ensures high performance and efficiency, making it 
                             suitable for real-time applications and large-scale deployments.
                         </li>
-                        </li> <br>
                     </ul>
+            </article>
+            <article>
                     <h2>Comprehensive survey on image and video quality assessment</h2>
                     <ul>
                         <li>
@@ -177,9 +192,8 @@
                             and consistency in evaluation. This survey meticulously categorizes and compares various assessment techniques, highlighting their 
                             strengths, limitations, and potential areas for improvement. This work has been cited over 250 times in prestigous journals and conferences.
                         </li>
-                        </li> <br>
                     </ul>
-            </p>
+            </article>
         </section>
     </main>
     <script src="scripts.js"></script>
