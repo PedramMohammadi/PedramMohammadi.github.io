@@ -13,57 +13,172 @@
             <a href="projects.html">Projects</a>
             <a href="publications.html">Publications</a>
             <a href="resume.html">Resume</a>
-            <span id="theme-toggle">🌙</span>
         </nav>
     </header>
     <main>
         <section class="info">
-            <h1>Selected Projects</h1>
             <p>
-                I am currently working as a Senior Video Quality Engineer at <a href="https://netint.com/" target="_blank">NETINT Technologies Inc.</a> My focus is on developing algorithms that 
-                enhance the objective and subjective visual quality of images and videos for NETINT's next generation Video Processing Units (VPUs). Aside from algorithm 
-                development, I define visual quality guidelines for company's different product lines. I also specialize in developing and optimizing video encoding 
-                processes, ensuring that our clients receive the highest visual quality video content with minimal latency and maximum efficiency. My other responsibilities 
-                involves rigorous testing, analysis, and implementation of cutting-edge video compression algorithms for different codecs such as AVC, HEVC, and AV1 
-                to deliver superior streaming experiences.
-            </p>
-            <p>
-                Prior to joining NETINT, I worked as a Senior Scientific Research and Experimental Development (SR&ED) 
-                consultant at <a href="https://kpmg.com/ca/en/home.html" target="_blank">KPMG LLP</a> to support businesses in their pursuit of innovation. At KPMG, I was part of a 
-                dynamic team dedicated to helping clients maximize their SR&ED tax credits. This role required a deep understanding of both the technical intricacies and the 
-                financial implications of R&D projects. My time at KPMG honed my ability to translate complex scientific concepts into actionable insights for businesses, ensuring 
-                they could fully benefit from available incentives. I gained valuable skills in project management, client collaboration, and strategic planning, all of 
-                which have enriched my professional toolkit. 
-            </p>
-            <p>
-                I received my PhD from <a href="https://www.ubc.ca/" target="_blank">The University of British Columbia</a> in 
-                Electrical and Computer Engineering. During this time, I was part of the <a href="https://dml.ece.ubc.ca/index.html" target="_blank">Digital Multimedia Lab (DML)</a>
-                and conducted research in the field of High Dynamic Range (HDR) video processing. My work focused on developing 
-                algorithms to convert Standard Dynamic Range (SDR) content to HDR, with the goal of achieving highest possible 
-                visual quality. These patented techniques have been successfully implemented in the industry, bridging the gap 
-                between academic research and real-world applications. Collaborating with industry leaders, I was able to translate 
-                theoretical advancements into practical solutions, paving the way for commercial adoption and demonstrating the 
-                practical relevance of my work.
-            </p>
-            <p>
-                I completed my B.Sc. and M.Sc. degrees in Electrical Engineering - Communication Systems in 
-                <a href="https://en.um.ac.ir/" target="_blank">Ferdowsi University of Mashhad</a>. My work during this time was 
-                focused on understanding the Human Visual System's (HVS) behavior and how it perceives visual quality to help develop 
-                an objective video quality evaluation metric for assessing the visual quality of HDR content. My work resulted in a 
-                survey paper that has been widely recognized in the academic community, with 298 citations in prestigious journals and 
-                conferences, underscoring its influence and contribution to the field.
-            </p>
-            <p>
-                I am deeply passionate about algorithm development in the field of image and video processing, with a keen interest 
-                in exploring the entire lifecycle from research and inception of the idea to product development. My goal is to work 
-                on groundbreaking projects that push the boundaries of what is possible, focusing on novel areas that have the 
-                potential to make a significant impact. I thrive on the challenge of pioneering new solutions and am committed to 
-                contributing to advancements that shape the future.
-            </p>
-            <p>
-                I'm always open to connect with like-minded individuals and learn from their experiences and explore possible 
-                collaborations. If you’d like to chat, feel free to send me an <a href="mailto:pedram.mohammadi.eng@gmail.com" target="_blank">email</a>. 
-                email or connect with me on <a href="https://www.linkedin.com/in/pedram-mohammadi-056325a7/" target="_blank">LinkedIn</a>.
+                    <h2>Perception-based Standard Dynamic Range (SDR) to High Dynamic Range (HDR) conversion</h2>
+                    <ul>
+                        <li>
+                            <img src="1.png" class="project-image"> The drastic visual improvements introduced by <a href="https://en.wikipedia.org/wiki/High_dynamic_range" target="_blank">HDR</a> 
+                            technologies open new markets for a wide range of industries. In this project, through modeling 
+                            the behavior of human eye, we propose a novel high visual quality video inverse Tone Mapping Operator (iTMO) that addresses the 
+                            inadequacies of the state-of-the-art methods, resulting in high visual quality HDR videos that match the capabilities of the HDR technology. 
+                            This algorithm uses a hybrid approach to achieve an optimal balance between the overall contrast and brightness of the output HDR frame 
+                            by maximizing a weighted sum of contrast and brightness difference between input SDR and generated HDR frame. 
+
+                            Our subjective evaluations demonstrated that the proposed algorithm outperforms the existing methods by an average of 75% in terms of 
+                            visual quality. Further testing using <a href="https://hdrvdp.sourceforge.net/wiki/" target="_blank">HDR VDP</a> and 
+                            <a href="https://github.com/gfxdisp/pu21" target="_blank">PU-SSIM</a> objective quality metrics demonstrated that our 
+                            algorithm outperforms existing methods on a wide variety of input content.
+                        </li> <br>
+                    </ul>
+                    <h2>Frame-level rate Control for real-time video applications</h2>
+                    <ul>
+                        <li>
+                            <img src="7.png" class="project-image"> Rate control module is a critical component of a video encoder, especially for low-delay applications such as cloud gaming, 
+                            live streaming, and video conferencing. It ensures that video data is transmitted efficiently and smoothly, maintaining high visual 
+                            quality while adapting to varying network conditions and content complexity. In this work, we developed a frame-level 
+                            video rate control algorithm for <a href="https://netint.com/" target="_blank">NETINT Technologies's</a> next-generation 
+                            Video Processing Units (VPUs). Our algorithm is content adaptive, delivering outstanding performance improvements in terms of BD-rate. 
+                            These enhancements are codec-agnostic, demonstrating consistent gains across AVC, HEVC, and AV1 codecs. Our algorithm achieves an 
+                            average of 10% improvement in BD-rate compared to previous generation encoders, reflecting its efficiency in maintaining high visual 
+                            quality at reduced bitrates. 
+                        </li>
+                        </li> <br>
+                    </ul>
+                    <h2>Enhancing video temporal consistency</h2>
+                    <ul>
+                        <li>
+                            <img src="6.png" class="project-image"> Maintaining consistent luminance is crucial for delivering high-quality viewing experiences. 
+                            Unwanted fluctuations in brightness, often perceived as flickering, can detract from the visual appeal and clarity of images 
+                            and videos. In this work, we addresses this challenge by implementing a condition on any brightness conversion that limits brightness 
+                            fluctuations to less than one Just Noticeable Difference (JND), effectively preventing perceptible flickering. 
+                            By ensuring that changes in brightness remain below the human threshold of detection, our algorithm guarantees a stable and 
+                            consistent luminance output, enhancing the viewer's experience. 
+                        </li>
+                        </li> <br>
+                    </ul>
+                    <h2>Fully automatic, content adaptive SDR to HDR conversion</h2>
+                    <ul>
+                        <li>
+                            <img src="4.png" class="project-image"> Converting SDR content to HDR format to take advantage of the superior visual quality offered by HDR displays, 
+                            is an attractive proposition to SDR content owners and real-time broadcasters. In this work, we proposed a novel content 
+                            adaptive algorithm that models the sensitivity of the human eye to brightness changes in different 
+                            areas of a scene. By processing each frame indepently, our algorithms assigns different weights to different regions of a scene 
+                            depending on their pixel distribution. Our subjective evaluations indicate that our proposed method outperforms other 
+                            state-of-the-art methods by an average of 80% in terms of visual quality. In addition to subjective evaluations, 
+                            we also performed objective evaluations using HDR-VDP and PU-SSIM metrics and concluded that, on average, 
+                            our proposed iTMO outperforms the state-of-the-art methods in terms of these two metrics.
+                        </li>
+                        </li> <br>
+                    </ul>
+                    <h2>Block-Level Rate Control for Enhanced Video Encoding</h2>
+                    <ul>
+                        <li>
+                            <img src="8.png" class="project-image"> Block-level rate control, particularly at the Coding Tree Unit (CTU) level, is a crucial aspect of video encoding that focuses on 
+                            optimizing bitrate allocation within individual blocks of a video frame. This fine-grained approach allows for more precise control 
+                            over video quality and compression efficiency. In this project, by analyzing the complexity of each block, we developed a block-level 
+                            rate control algorithm for <a href="https://netint.com/" target="_blank">NETINT Technologies's</a> next-generation VPUs. This algorithm 
+                            delivers substantial improvements in video encoding performance, achieving an average BD-rate gain of 12% over previous generation 
+                            encoders. These enhancements provide consistent benefits across AVC, HEVC, and AV1 codecs. 
+                        </li>
+                        </li> <br>
+                    </ul>
+                    <h2>Hue preserving color adjustment</h2>
+                    <ul>
+                        <li>
+                            <img src="5.png" class="project-image"> Color adjustment plays a pivotal role in image processing and visual media, ensuring that the representation of colors remains true 
+                            to their intended appearance despite variations in lighting and display conditions. As brightness levels change, the hue and saturation 
+                            of colors can be unintentionally altered, leading to discrepancies that affect the visual quality and accuracy of images.
+                            In this project, we developed a novel color adjustment algorithm designed to effectively manage changes in hue as brightness levels 
+                            are altered. The algorithm's effectiveness is demonstrated through a series of analyses comparing it to existing 
+                            methods. Our subjective results indicate that our proposed algorithm outperforms the existing methods by 70% in terms of how closely the 
+                            output colors match their input counterparts. 
+                        </li>
+                        </li> <br>
+                    </ul>
+                    <h2>2-Pass video rate control for latency-tolerant applications</h2>
+                    <ul>
+                        <li>
+                            <img src="9.png" class="project-image"> 2-pass video rate control is a strategic approach used in latency-tolerant applications, such as Video on Demand (VoD), 
+                            where the emphasis is on achieving optimal video quality and precise bitrate management. Unlike single-pass methods, 2-pass 
+                            rate control analyzes the video content in two stages, allowing for a more comprehensive understanding of both current and future 
+                            frame complexities. In this project, implemented in <a href="https://netint.com/" target="_blank">NETINT Technologies's</a> next-generation VPUs, 
+                            we developed a 2-pass video rate control algorithm designed to enhance both BD-rate performance and target bitrate tracking for 
+                            VoD applications. By analyzing the complexity of current and future frames, the algorithm efficiently assigns Quantization 
+                            Parameters (QPs) to each frame. This results in an average BD-rate improvement of 6% compared to previous generation algorithms, 
+                            along with a 3% enhancement in target tracking accuracy. These improvements are consistently observed across various codecs, 
+                            including AVC, HEVC, and AV1.                            
+                        </li>
+                        </li> <br>
+                    </ul>
+                    <h2>Entropy-based image segmentation</h2>
+                    <ul>
+                        <li>
+                            <img src="2.png" class="project-image"> In this project, we developed an image segmentation algorithm based in the <a href="https://en.wikipedia.org/wiki/Entropy_(information_theory)" target="_blank">theory of entropy</a>. 
+                            The primary objective was to effectively categorize an image into three distinct brightness regions: dark, normal, and bright. 
+                            By leveraging entropy, a measure of undertainty, the algorithm intelligently identifies the most informative thresholds to segment the 
+                            image. The segmented results is an image where each region is clearly defined, facilitating further analysis or processing tasks. 
+                            This method proves particularly useful in applications such as medical imaging, remote sensing, and computer vision, where precise 
+                            segmentation can lead to more accurate interpretations and decisions.
+                        </li>
+                        </li> <br>
+                    </ul>
+                    <h2>Enhanced target tracking for low-delay rate control algorithms</h2>
+                    <ul>
+                        <li>
+                            <img src="10.png" class="project-image"> In low-delay applications, such as live streaming and interactive video services, maintaining precise target tracking in rate 
+                            control algorithms is essential for delivering consistent video quality and minimizing latency. In this project, we developed an 
+                            innovative approach to enhance the target tracking performance of low-delay rate control algorithms. By analyzing the complexity of 
+                            different regions within a frame, the algorithm accurately estimates the frame's target size. This detailed analysis allows for more 
+                            precise bitrate distribution, resulting in an average improvement of 5% in target tracking performance compared to previous generation 
+                            algorithms.                            
+                        </li>
+                        </li> <br>
+                    </ul>
+                    <h2>Advanced post-processing for enhanced BD-Rate VMAF in video encoders</h2>
+                    <ul>
+                        <li>
+                            <img src="11.png" class="project-image"> In the realm of video encoding, optimizing the BD-rate VMAF score is critical for achieving superior video quality while maintaining 
+                            efficient bitrate usage. <a href="https://github.com/Netflix/vmaf" target="_blank">Video Multi-Method Assessment Fusion (VMAF)</a> is a 
+                            perceptual video quality metric that combines multiple assessment methods to provide a comprehensive evaluation of video quality.                        
+                            In this project, we developed post-processing techniques focused on the brightness and color channels of input video 
+                            sequences. This approach significantly enhanced the BD-rate VMAF score by an average of 24%, demonstrating substantial improvements 
+                            in video quality without compromising the original look and artistic impression of the videos. The transformations applied are 
+                            meticulously designed to preserve the aesthetic integrity of the content. The gains achieved through this method are consistent across 
+                            various rate control modes, including Constant Quantization Parameter (CQP), Constant Bitrate (CBR), and Constant Rate Factor (CRF).
+                        </li>
+                        </li> <br>
+                    </ul>
+                    <h2>Comprehensive SDR/HDR conversion suite for enhanced video compatibility</h2>
+                    <ul>
+                        <li>
+                            The seamless conversion between Standard Dynamic Range (SDR) and High Dynamic Range (HDR) formats is essential for ensuring compatibility 
+                            and optimal viewing experiences across diverse display technologies. In this project, we developed a SDR/HDR conversion suite for 
+                            <a href="https://netint.com/" target="_blank">NETINT Technologies's</a> next generation VPUs, capable of performing three distinct types of 
+                            conversions. This suite offers robust solutions for converting SDR input to HDR format, transforming HDR input to SDR format, and 
+                            converting between different HDR formats, such as <a href="https://en.wikipedia.org/wiki/Hybrid_log%E2%80%93gamma" target="_blank">Hybrid Log-Gamma (HLG)</a> to 
+                            <a href="https://en.wikipedia.org/wiki/HDR10" target="_blank">HDR10</a>. Each conversion process is meticulously designed to preserve the 
+                            visual integrity and artistic intent of the original content, ensuring that the resulting output meets the highest standards of 
+                            quality and compatibility. The hardware implementation of this suite ensures high performance and efficiency, making it 
+                            suitable for real-time applications and large-scale deployments.
+                        </li>
+                        </li> <br>
+                    </ul>
+                    <h2>Comprehensive survey on image and video quality assessment</h2>
+                    <ul>
+                        <li>
+                            In this survey paper, we conducted an extensive review of both subjective and objective methods 
+                            for assessing image and video quality. The project aimed to bridge the gap between human perception and algorithmic evaluation, 
+                            providing a holistic view of current methodologies and their applications. Subjective assessment involves human observers to 
+                            evaluate quality. In contrast, objective assessment leverages computational models to predict quality scores, offering efficiency 
+                            and consistency in evaluation. This survey meticulously categorizes and compares various assessment techniques, highlighting their 
+                            strengths, limitations, and potential areas for improvement. This work has been cited over 250 times in prestigous journals and conferences.
+                        </li>
+                        </li> <br>
+                    </ul>
             </p>
         </section>
     </main>

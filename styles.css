@@ -86,10 +86,6 @@ iframe {
     font-size: 2em;
 }
 
-#theme-toggle {
-    cursor: pointer;
-}
-
 .dark-mode {
     background-color: #333;
     color: #fff;
@@ -122,4 +118,12 @@ p {
 
 li {
     margin-right: 250px;
+}
+
+.project-image {
+    float: right;
+    margin-left: 15px;
+    width: 200px;
+    height: auto;
+    margin: 5px 15px 15px 5px;
 }
